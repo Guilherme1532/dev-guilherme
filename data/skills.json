@@ -1,0 +1,47 @@
+[
+  {
+    "name": "HTML",
+    "imgSrc": "/skills/html.svg",
+    "color": "bg-[#DE4B25]"
+  },
+  {
+    "name": "CSS",
+    "imgSrc": "/skills/css.svg",
+    "color": "bg-[#1572B6]"
+  },
+  {
+    "name": "JavaScript",
+    "imgSrc": "/skills/javascript.svg",
+    "color": "bg-[#F7E025]"
+  },
+  {
+    "name": "ReactJs",
+    "imgSrc": "/skills/react.svg",
+    "color": "bg-[#08D9FF]"
+  },
+  {
+    "name": "TypeScript",
+    "imgSrc": "/skills/typescript.svg",
+    "color": "bg-[#377CC8]"
+  },
+  {
+    "name": "Node.js",
+    "imgSrc": "/skills/nodejs.svg",
+    "color": "bg-[#8CC84B]"
+  },
+  {
+    "name": "Tailwind CSS",
+    "imgSrc": "/skills/tailwindcss.svg",
+    "color": "bg-[#3EBFF8]"
+  },
+  {
+    "name": "MongoDB",
+    "imgSrc": "/skills/mongodb.svg",
+    "color": "bg-[#6CAC48]"
+  },
+  {
+    "name": "Next.js",
+    "imgSrc": "/skills/next-js.svg",
+    "color": "bg-[#000000]"
+  }
+]

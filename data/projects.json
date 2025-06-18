@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "name": "Course Store",
+    "logo": "../project-files/CourseStore/project-logo.png",
+    "images": [
+      "../project-files/CourseStore/screenshot-1.png",
+      "../project-files/CourseStore/screenshot-2.png",
+      "../project-files/CourseStore/screenshot-3.png"
+    ],
+    "color": "bg-blue-500",
+    "description": {
+      "overview": "CourseStore é uma plataforma para a venda de cursos online, criada com React no frontend e Node.js no backend.",
+      "features": [
+        "Cadastro de usuários",
+        "Visualização de cursos por categoria",
+        "Carrinho de compras e finalização de pedidos com Stripe",
+        "Interface responsiva com design moderno usando TailwindCSS",
+        "Painel administrativo para gerenciamento de cursos, categorias e usuários",
+        "Autenticação com JWT e uploads de imagens com Cloudinary"
+      ]
+    },
+    "video": "../project-files/CourseStore/video.mp4",
+    "link": "https://course-store-eta.vercel.app/",
+    "github": "",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ReactJs",
+      "Tailwind CSS",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Dev Gui",
+    "logo": "../project-files/DevGui/project-logo.png",
+    "images": [
+      "../project-files/DevGui/screenshot-1.png",
+      "../project-files/DevGui/screenshot-2.png"
+    ],
+    "color": "bg-blue-500",
+    "description": {
+      "overview": "Esté é meu projeto de portfólio, Dev Gui",
+      "features": [
+        "Interface responsiva e moderna",
+        "Galeria de projetos",
+        "Formulário de contato funcional",
+        "Animações sutis para melhorar a experiência do usuário"
+      ]
+    },
+    "video": "",
+    "link": "",
+    "github": "",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Next.js",
+      "Tailwind CSS"
+    ]
+  }
+]

@@ -22,7 +22,7 @@
     },
     "video": "../project-files/CourseStore/video.mp4",
     "link": "https://course-store-eta.vercel.app/",
-    "github": "https://github.com/Guilherme1532/dev-guilherme",
+    "github": "https://github.com/Guilherme1532/course-store",
     "skills": [
       "HTML",
       "CSS",
@@ -53,7 +53,7 @@
     },
     "video": "",
     "link": "",
-    "github": "",
+    "github": "https://github.com/Guilherme1532/dev-guilherme",
     "skills": ["HTML", "CSS", "JavaScript", "Next.js", "Tailwind CSS"]
   }
 ]

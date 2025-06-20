@@ -3,13 +3,10 @@
 
 :root {
   --background: #000b10;
-  --font-roboto: Poppins, sans-serif
-}
-@theme inline {
-  
+  --font-roboto: Poppins, sans-serif;
   --font-principal: var(--font-roboto);
   --color-background: var(--background);
-  --color-one: var(--color-cyan-400)
+  --color-one: var(--color-cyan-400);
 }
 
 body {

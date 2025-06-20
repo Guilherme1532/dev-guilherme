@@ -1,42 +1,50 @@
-"use client";
-import projects from "../../../../data/projects.json";
-import skills from "../../../../data/skills.json";
+import projects from "@/data/projects.json";
+import skills from "@/data/skills.json";
 import SkillCardProject from "@/_components/SkillCardProject";
 import SwiperProjects from "@/_components/SwiperProjects";
-import { useParams } from "next/navigation";
 import { FaGithub, FaGlobe } from "react-icons/fa6";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
-interface Project {
-  id: string;
-  name: string;
-  description: {
-    overview: string;
-    features: string[];
-  };
-  logo: string;
-  link: string;
-  github: string;
-  skills: string[];
-  video: string;
-  images: string[];
-}
+type PageProps = {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }> | undefined;
+};
 
-interface Skill {
-  name: string;
-  imgSrc: string;
-  color: string;
-}
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const id = (await params).id;
 
-export default function ProjectPage() {
-  const projectId = useParams().id as string;
+  const project = projects.find((p) => p.id === id);
 
-  // Encontre o projeto correspondente no JSON
-  const project: Project | undefined = projects.find((p) => p.id === projectId);
   if (!project) {
-    return <div>Projeto não encontrado</div>;
+    return {
+      title: "Projeto não encontrado",
+      description: "O projeto solicitado não foi encontrado.",
+    };
   }
+  return {
+    title: `${project.name}`,
+    description: project.description.overview,
+    openGraph: {
+      title: project.name,
+      description: project.description.overview,
+      images: [project.images?.[0] || ""],
+    },
+  };
+}
 
-  // Encontre as informações detalhadas das skills do projeto
+export function generateStaticParams() {
+  return projects.map((p) => ({ id: p.id }));
+}
+
+export default async function ProjectPage({ params }: PageProps) {
+  const id = (await params).id;
+  const project = projects.find((p) => p.id === id);
+
+  if (!project) return notFound();
+
   const projectSkills = project.skills.map((skillName) =>
     skills.find((skill) => skill.name === skillName)
   );

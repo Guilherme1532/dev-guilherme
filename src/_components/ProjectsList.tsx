@@ -1,6 +1,6 @@
-import { describe } from "node:test";
+
 import ProjectCard from "./ProjectCard";
-import projects from "../../data/projects.json"; // Adjust the import path as necessary
+import projects from "@/data/projects.json"; // Adjust the import path as necessary
 
 export default function ProjectsList() {
   return (

@@ -9,7 +9,7 @@ type SkillCardProps = {
 export default function SkillCard({ name, imgSrc, color }: SkillCardProps) {
   return (
     <div className={`${color} p-1 rounded-lg`}>
-      <div className="h-36 px-5 w-full bg-[#16171a] rounded-lg flex flex-col items-center justify-between py-4">
+      <div className="h-36 px-5 w-full bg-[#000b10] rounded-lg flex flex-col items-center justify-between py-4">
         <img
           src={imgSrc}
           alt={name}

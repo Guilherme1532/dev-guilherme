@@ -1,5 +1,5 @@
 import SkillCard from "./SkillCard";
-import skills from "../../data/skills.json";
+import skills from "@/data/skills.json";
 
 
 

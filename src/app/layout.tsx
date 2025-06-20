@@ -13,6 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://guilhermeaguiar.me"),
   title: "Guilherme Ataide - Desenvolvedor Fullstack",
   description: "Desenvolvedor Frontend, apaixonado por tecnologia e inovação.",
 };

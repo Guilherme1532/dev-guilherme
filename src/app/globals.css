@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--background);
   font-family: var(--font-roboto);
   color: #fff;
   margin: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 .logoname:hover {
-  transform: scale(1.25);
+  transform: translateY(-3px);
   color: var(--color-one); /* azul claro, ajuste como quiser */
 }
 

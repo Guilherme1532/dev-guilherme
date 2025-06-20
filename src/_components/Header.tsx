@@ -69,12 +69,12 @@ export default function Header() {
       <nav
         className={`${
           open
-            ? "block min-h-[100%] bg-background animate-fade-down animate-duration-100"
+            ? "block min-h-[100%] bg-[#000b10]  animate-fade-down animate-duration-100"
             : "hidden"
         } md:block absolute md:static top-16 left-0 w-full md:w-auto z-50`}
       >
         <ul
-          className={`linkpages animated-border flex flex-col md:flex-row items-center md:items-start
+          className={`linkpages bg-background animated-border flex flex-col md:flex-row items-center md:items-start
       ${open ? "space-y-4 my-4 gap-6" : ""}
       md:space-y-0 md:border-0 md:pb-0 md:space-x-4`}
         >

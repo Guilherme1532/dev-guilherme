@@ -10,15 +10,17 @@
     ],
     "color": "bg-blue-500",
     "description": {
-      "overview": "CourseStore é uma plataforma para a venda de cursos online, criada com React no frontend e Node.js no backend.",
+      "overview": "CourseStore é uma plataforma web moderna voltada para a venda e gestão de cursos online, desenvolvida com React no frontend e Node.js no backend, priorizando escalabilidade, segurança e experiência do usuário.",
       "features": [
-        "Cadastro de usuários",
-        "Visualização de cursos por categoria",
-        "Carrinho de compras e finalização de pedidos com Stripe",
-        "Interface responsiva com design moderno usando TailwindCSS",
-        "Painel administrativo para gerenciamento de cursos, categorias e usuários",
-        "Autenticação com JWT e uploads de imagens com Cloudinary"
-      ]
+        "Cadastro e autenticação segura de usuários com JWT e cookies",
+        "Visualização dinâmica de cursos por categoria, com filtros interativos",
+        "Carrinho de compras com integração completa ao Stripe para processamento de pagamentos",
+        "Design responsivo e interativo com TailwindCSS e animações envolventes",
+        "Painel administrativo completo para gerenciamento de cursos, categorias e usuários, com estados globais controlados via Redux Toolkit",
+        "Upload e gerenciamento de imagens com Cloudinary e suporte a múltiplos formatos",
+        "Navegação fluida com React Router e gerenciamento eficiente de tabelas com @tanstack/react-table"
+      ],
+      "learning": "Este projeto me proporcionou uma experiência prática significativa em desenvolvimento full-stack, incluindo a integração de tecnologias modernas como React, Node.js, MongoDB e Stripe, além de aprimorar minhas habilidades em design responsivo e usabilidade."
     },
     "video": "../project-files/CourseStore/video.mp4",
     "link": "https://course-store-eta.vercel.app/",
@@ -43,13 +45,14 @@
     ],
     "color": "bg-blue-500",
     "description": {
-      "overview": "Esté é meu projeto de portfólio, Dev Gui",
+      "overview": "Dev Gui é meu portfólio pessoal, desenvolvido com foco em apresentar meus projetos, habilidades e experiências como desenvolvedor web, em uma interface elegante e responsiva.",
       "features": [
-        "Interface responsiva e moderna",
-        "Galeria de projetos",
-        "Formulário de contato funcional",
-        "Animações sutis para melhorar a experiência do usuário"
-      ]
+        "Layout moderno e adaptável a diferentes dispositivos, utilizando boas práticas de responsividade",
+        "Galeria interativa de projetos, com links diretos para repositórios e demonstrações ao vivo",
+        "Formulário de contato funcional, com envio direto para meu e-mail",
+        "Transições suaves e animações leves para uma navegação mais agradável e intuitiva"
+      ],
+      "learning": "Este projeto me permitiu aprimorar minhas habilidades em Next.js e Tailwind CSS, além de aprofundar meu conhecimento em SEO e acessibilidade, garantindo uma melhor experiência para os usuários."
     },
     "video": "",
     "link": "",

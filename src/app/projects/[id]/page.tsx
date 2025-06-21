@@ -82,7 +82,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </a>
           </div>
         </div>
-        <div className="flex flex-col justify-between gap-4 mt-4">
+        <div className="flex flex-col justify-between gap-5 mt-4">
           <div className="flex flex-wrap gap-2">
             {projectSkills.map((skill, index) =>
               skill ? (
@@ -106,13 +106,13 @@ export default async function ProjectPage({ params }: PageProps) {
                   muted
                   autoPlay
                   className="w-full h-auto rounded-lg"
-                  src={project.video} // Certifique-se de que o JSON contém o caminho do vídeo
+                  src={project.video}
                 >
                   Seu navegador não suporta a reprodução de vídeos.
                 </video>
               </div>
             )}
-            <div className="w-full flex flex-col gap-2">
+            <div className="w-full flex flex-col gap-3">
               <h1>{project.description.overview}</h1>
               <ul>
                 {project.description.features.map((feature, index) => (
@@ -121,6 +121,7 @@ export default async function ProjectPage({ params }: PageProps) {
                   </li>
                 ))}
               </ul>
+              <p>{project.description.learning}</p>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaLinkedinIn, FaGithub, FaDiscord, FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
@@ -10,6 +10,19 @@ export default function Header() {
   const handleCloseMenu = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    
+    // Limpar ao desmontar
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [open]);
 
   return (
     <header
@@ -69,12 +82,12 @@ export default function Header() {
       <nav
         className={`${
           open
-            ? "block min-h-[100%] bg-[#000b10]  animate-fade-down animate-duration-100"
+            ? "block min-h-[100%] bg-[#000b10]  animate-fade-down animate-duration-100 max-h-[85vh] overflow-y-auto"
             : "hidden"
         } md:block absolute md:static top-16 left-0 w-full md:w-auto z-50`}
       >
         <ul
-          className={`linkpages bg-background animated-border flex flex-col md:flex-row items-center md:items-start
+          className={`linkpages bg-background overflow-y-auto animated-border flex flex-col md:flex-row items-center md:items-start
       ${open ? "space-y-4 my-4 gap-6" : ""}
       md:space-y-0 md:border-0 md:pb-0 md:space-x-4`}
         >

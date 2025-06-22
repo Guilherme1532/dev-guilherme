@@ -25,13 +25,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:w-full mx-auto animate-fade animate-duration-5000">
+          <div className="w-full flex justify-center items-center mx-auto animate-fade animate-duration-5000">
             <Image
               width={260}
               height={180}
               src="/home.png"
               alt="Logo"
-              className="w-full animate-wiggle animate-infinite animate-duration-7500"
+              className="animate-wiggle animate-infinite animate-duration-7500"
             />
           </div>
         </div>

@@ -1,15 +1,21 @@
+import { FaBookOpen } from "react-icons/fa";
+import { MdOutlineWork } from "react-icons/md";
+
 export default function ExperienceSec() {
   return (
-    <div className="w-full animate-fade animate-duration-3000 flex flex-col items-center gap-10">
+    <div className="w-full animate-fade animate-duration-2000 flex flex-col items-center gap-15">
       <div className="relative w-full font-extrabold flex flex-col items-center gap-4">
-        <h1 className="text-5xl z-1 text-cyan-400">Experiência</h1>
-        <span className="absolute text-6xl bottom-2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent opacity-30">
-          Experiência
+        <h2 className="text-4xl z-1 text-cyan-400">Experiência</h2>
+        <span className="absolute bottom-3 flex items-center gap-2">
+          <MdOutlineWork className="text-5xl text-cyan-400 opacity-30" />
+          <span className="text-5xl truncate bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent opacity-10">
+            Experience
+          </span>
         </span>
       </div>
       <section className="w-full flex flex-col-reverse md:flex-row">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a] rounded-md">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
             <div className="w-full md:w-1/3">
               <h2 className="text-2xl font-bold">Desenvolvedor Autônomo</h2>
               <p className="text-gray-500">Freelancer</p>
@@ -24,7 +30,7 @@ export default function ExperienceSec() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a] rounded-md">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
             <div className="w-full md:w-1/3">
               <h2 className="text-2xl font-bold">Desenvolvedor Freelancer</h2>
               <p className="text-gray-500">Oliver</p>
@@ -41,14 +47,17 @@ export default function ExperienceSec() {
         </div>
       </section>
       <div className="relative w-full font-extrabold flex flex-col items-center gap-4">
-        <h2 className="text-2xl z-1 text-cyan-400">Experiência Academica</h2>
-        <span className="absolute text-3xl truncate bottom-2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent opacity-10">
-          Experiência Academica
+        <h2 className="text-4xl z-1 text-cyan-400">Educação</h2>
+        <span className="absolute bottom-3 flex items-center gap-2">
+          <FaBookOpen className="text-5xl text-cyan-400 opacity-30" />
+          <span className="text-5xl truncate bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent opacity-10">
+            Education
+          </span>
         </span>
       </div>
       <section className="w-full flex flex-col-reverse md:flex-row">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a] rounded-md">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
             <div className="w-full md:w-1/3">
               <h2 className="text-2xl font-bold">
                 Tecnólogo em Análise e Desenvolvimento de Sistemas
@@ -63,7 +72,7 @@ export default function ExperienceSec() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a] rounded-md">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
             <div className="w-full md:w-1/3">
               <h2 className="text-2xl font-bold">
                 Bacharelado em Ciência da Computação
@@ -73,7 +82,12 @@ export default function ExperienceSec() {
             </div>
             <div className="w-full md:w-2/3">
               <p>
-                Estudei Ciência da Computação e concluí todas as disciplinas do curso, sendo aprovado em todas. Meu foco acadêmico foi em desenvolvimento e engenharia de softwares, adquirindo habilidades em lógica de programação e banco de dados. Por motivos pessoais, não finalizei o estágio obrigatório necessário para a obtenção do diploma.
+                Estudei Ciência da Computação e concluí todas as disciplinas do
+                curso, sendo aprovado em todas. Meu foco acadêmico foi em
+                desenvolvimento e engenharia de softwares, adquirindo
+                habilidades em lógica de programação e banco de dados. Por
+                motivos pessoais, não finalizei o estágio obrigatório necessário
+                para a obtenção do diploma.
               </p>
             </div>
           </div>

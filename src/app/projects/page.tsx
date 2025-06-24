@@ -4,7 +4,7 @@ import { FaLaptopCode } from "react-icons/fa";
 export const metadata = {
   title: "Projetos | Guilherme Ataide",
   description:
-    "Meu nome é Guilherme Ataide, sou um aspirante a desenvolvedor fullstack do Brasil.",
+    "Explore meus projetos de desenvolvimento web, incluindo aplicações frontend e backend.",
 };
 
 export default function Projects() {

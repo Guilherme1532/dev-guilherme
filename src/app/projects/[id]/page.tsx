@@ -89,7 +89,7 @@ export default async function ProjectPage({ params }: PageProps) {
           </div>
         </div>
         <div className="flex flex-col justify-between gap-5 mt-4">
-          <div className="flex justify-between gap-4 w-full">
+          <div className="flex justify-between gap-2 md:items-center w-full">
             <div className="flex flex-wrap gap-2">
               {projectSkills.map((skill, index) =>
                 skill ? (
@@ -107,7 +107,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <div className="flex flex-col gap-2">
               <p className="flex items-center gap-2">
                 <span
-                  className={`px-3 py-1 rounded-full text-sm font-medium ${
+                  className={`px-3 py-1 rounded-full truncate text-sm font-medium ${
                     project.status === "Em construção"
                       ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500/50"
                       : project.status === "Concluído"

@@ -2,12 +2,13 @@ import Image from "next/image";
 import { FaLinkedinIn, FaDiscord, FaWhatsapp } from "react-icons/fa";
 import LetsTalkSec from "@/_components/LetsTalkSec";
 import { FaAlignJustify } from "react-icons/fa6";
+import AnimatedSection from "@/_components/AnimatedSection";
 
 
 export const metadata = {
   title: "Sobre mim | Guilherme Ataide",
   description:
-    "Meu nome é Guilherme Ataide, sou um aspirante a desenvolvedor fullstack do Brasil.",
+    "Conheça mais sobre mim, minha trajetória e habilidades como desenvolvedor fullstack.",
 };
 
 export default function About() {
@@ -44,8 +45,10 @@ export default function About() {
             Sempre em busca de novos desafios e oportunidades para aprimorar
             minhas habilidades e contribuir para projetos interessantes.
           </p>
-
-          <LetsTalkSec />
+          <AnimatedSection className="w-full">
+            <LetsTalkSec />
+          </AnimatedSection>
+          
         </div>
         <div className="md:max-w-[40%] w-full flex flex-col items-center gap-4 p-4 animate-fade animate-duration-2000">
           <Image

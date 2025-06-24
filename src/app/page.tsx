@@ -5,7 +5,19 @@ import SkillsHome from "@/_components/SkillsHome";
 import LetsTalkSec from "@/_components/LetsTalkSec";
 import Link from "next/link";
 import WriterComponent from "@/_components/WriterComponent";
+import AnimatedSection from "@/_components/AnimatedSection";
 
+
+export const metadata = {
+  title: "Home | Guilherme Ataide",
+  description: "Portfólio de projetos e experiências como desenvolvedor fullstack",
+  keywords: ['desenvolvedor', 'frontend', 'fullstack', 'react', 'next.js'],
+  openGraph: {
+    title: "Guilherme Ataide - Desenvolvedor Fullstack",
+    description: "Conheça meus projetos e habilidades em desenvolvimento web frontend e backend",
+    images: ['/home.jpg'],
+  }
+}
 export default function Home() {
   return (
     <section className="mt-10 flex flex-col container md:max-w-[1000px] p-4 mx-auto items-center gap-25">
@@ -36,18 +48,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full">
+      <AnimatedSection className="w-full">
         <ProjectsHome />
-      </section>
-      <section className="w-full">
+      </AnimatedSection>
+      <AnimatedSection className="w-full">
         <SkillsHome />
-      </section>
-      <section className="w-full">
+      </AnimatedSection>
+      <AnimatedSection className="w-full">
         <ExperienceSec />
-      </section>
-      <section className="w-full">
+      </AnimatedSection>
+      <AnimatedSection className="w-full">
         <LetsTalkSec />
-      </section>
+      </AnimatedSection>
     </section>
   );
 }

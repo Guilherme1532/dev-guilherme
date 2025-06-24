@@ -3,7 +3,7 @@ import { FaCode } from "react-icons/fa";
 
 export default function SkillsHome() {
   return (
-    <div className="w-full animate-fade animate-duration-3000 flex flex-col items-center gap-10">
+    <div className="w-full flex flex-col items-center gap-10">
       <div className="relative w-full font-extrabold flex flex-col items-center">
         <h2 className="text-4xl z-1 text-cyan-400">Habilidades</h2>
         <span className="absolute bottom-3 flex items-center gap-2">

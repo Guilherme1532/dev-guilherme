@@ -17,6 +17,12 @@
 /.next/
 /out/
 
+# Next.js generated files
+.next-sitemap.js
+
+# Sitemap temporários de build
+.next-sitemap-*
+
 # production
 /build
 
@@ -40,4 +46,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.vercel
+# Cache files
+.cache/
+.npm/

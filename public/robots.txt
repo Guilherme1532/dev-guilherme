@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://guilhermeaguiar.me
+
+# Sitemaps
+Sitemap: https://guilhermeaguiar.me/sitemap.xml

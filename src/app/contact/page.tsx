@@ -3,7 +3,7 @@ import { FaWhatsapp, FaPaperPlane, FaVoicemail } from "react-icons/fa";
 export const metadata = {
   title: "Contato | Guilherme Ataide",
   description:
-    "Meu nome é Guilherme Ataide, sou um aspirante a desenvolvedor fullstack do Brasil.",
+    "Entre em contato para oportunidades de trabalho ou colaborações em projetos.",
 };
 
 export default function Contact() {

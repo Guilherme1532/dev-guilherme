@@ -4,7 +4,7 @@ import { MdOutlineWork } from "react-icons/md";
 
 export default function ExperienceSec() {
   return (
-    <div className="w-full animate-fade animate-duration-2000 flex flex-col items-center gap-15">
+    <div className="w-full animate-fade animate-duration-1000 flex flex-col items-center gap-15">
       <div className="relative w-full font-extrabold flex flex-col items-center gap-4">
         <h2 className="text-4xl z-1 text-cyan-400">Experiência</h2>
         <span className="absolute bottom-3 flex items-center gap-2">

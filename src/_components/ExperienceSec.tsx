@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaBookOpen } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
 
@@ -15,7 +16,7 @@ export default function ExperienceSec() {
       </div>
       <section className="w-full flex flex-col-reverse md:flex-row">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] border-b-4 border-r-2 border-cyan-400 rounded-md">
             <div className="w-full md:w-1/3">
               <h2 className="text-2xl font-bold">Desenvolvedor Autônomo</h2>
               <p className="text-gray-500">Freelancer</p>
@@ -30,7 +31,7 @@ export default function ExperienceSec() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] border-b-4 border-r-2 border-cyan-400 rounded-md">
             <div className="w-full md:w-1/3">
               <h2 className="text-2xl font-bold">Desenvolvedor Freelancer</h2>
               <p className="text-gray-500">Oliver</p>
@@ -57,27 +58,45 @@ export default function ExperienceSec() {
       </div>
       <section className="w-full flex flex-col-reverse md:flex-row">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
-            <div className="w-full md:w-1/3">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] border-b-4 border-r-2 border-cyan-400 rounded-md">
+            <div className="w-full flex flex-col gap-2 md:w-1/3">
               <h2 className="text-2xl font-bold">
                 Tecnólogo em Análise e Desenvolvimento de Sistemas
               </h2>
-              <p className="text-gray-500">UFBRA</p>
+              <div className="flex gap-2 items-center text-gray-400">
+                <Image
+                  width={48}
+                  height={48}
+                  src="/ufbra-logo.png"
+                  alt="UFBRA Logo"
+                />
+                <p>UFBRA</p>
+              </div>
               <p className="text-gray-400">2025 - Presente</p>
             </div>
             <div className="w-full md:w-2/3">
               <p>
                 Retornando a minha jornada acadêmica, atualmente estou cursando
-                o curso de Tecnólogo em Análise e Desenvolvimento de Sistemas.
+                o curso de Tecnólogo em Análise e Desenvolvimento de Sistemas. 
+                Estou focado em aprimorar minhas habilidades em desenvolvimento
+                de software, com ênfase em tecnologias web e mobile.
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] rounded-md">
-            <div className="w-full md:w-1/3">
+          <div className="flex flex-col md:flex-row items-start gap-4 p-3 bg-[#16171a4c] border-b-4 border-r-2 border-cyan-400 rounded-md">
+            <div className="w-full flex flex-col gap-2 md:w-1/3">
               <h2 className="text-2xl font-bold">
                 Bacharelado em Ciência da Computação
               </h2>
-              <p className="text-gray-500">Unip</p>
+              <div className="flex gap-2 items-center text-gray-400">
+                <Image
+                  width={48}
+                  height={48}
+                  src="/unip-logo.png"
+                  alt="Unip Logo"
+                />
+                <p>Unip</p>
+              </div>
               <p className="text-gray-400">2018 - 2022</p>
             </div>
             <div className="w-full md:w-2/3">

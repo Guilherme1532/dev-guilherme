@@ -44,15 +44,7 @@ export default function Header() {
           />
         </div>
         <div className="flex">
-          <span className="logoname">G</span>
-          <span className="logoname">u</span>
-          <span className="logoname">i</span>
-          {/* <span className="logoname">l</span>
-          <span className="logoname">h</span>
-          <span className="logoname">e</span>
-          <span className="logoname">r</span>
-          <span className="logoname">m</span>
-          <span className="logoname">e</span> */}
+          <span className="font-bold text-xl">Gui</span>
         </div>
       </Link>
 

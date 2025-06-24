@@ -22,6 +22,8 @@
       ],
       "learning": "Este projeto me proporcionou uma experiência prática significativa em desenvolvimento full-stack, incluindo a integração de tecnologias modernas como React, Node.js, MongoDB e Stripe, além de aprimorar minhas habilidades em design responsivo e usabilidade."
     },
+    "status": "Concluído",
+    "year": "2025",
     "video": "../project-files/CourseStore/video.mp4",
     "link": "https://course-store-eta.vercel.app/",
     "github": "https://github.com/Guilherme1532/course-store",
@@ -29,7 +31,7 @@
       "HTML",
       "CSS",
       "JavaScript",
-      "ReactJs",
+      "React",
       "Tailwind CSS",
       "Node.js",
       "MongoDB"
@@ -54,9 +56,35 @@
       ],
       "learning": "Este projeto me permitiu aprimorar minhas habilidades em Next.js e Tailwind CSS, além de aprofundar meu conhecimento em SEO e acessibilidade, garantindo uma melhor experiência para os usuários."
     },
+    "status": "Concluído",
+    "year": "2025",
     "video": "",
     "link": "",
     "github": "https://github.com/Guilherme1532/dev-guilherme",
     "skills": ["HTML", "CSS", "JavaScript", "Next.js", "Tailwind CSS"]
+  },
+  {
+    "id": "3",
+    "name": "API para loja virtual",
+    "logo": "../project-files/api-loja/project-logo.png",
+    "images": ["../project-files/api-loja/screenshot-1.png"],
+    "color": "bg-blue-500",
+    "description": {
+      "overview": "Uma aplicação backend em desenvolvimento para uma loja virtual completa, construída com foco em escalabilidade, manutenibilidade e boas práticas de documentação. O projeto está sendo desenvolvido com Node.js, Express, PostgreSQL, Prisma, TypeScript e Swagger.",
+      "features": [
+        "Estrutura RESTful modular com rotas para gerenciamento de produtos, usuários, pedidos e pagamentos",
+        "Configuração inicial do Prisma para integração com banco de dados PostgreSQL em andamento",
+        "Implementação progressiva de autenticação com JWT e controle de acesso baseado em níveis de usuário",
+        "Documentação interativa da API sendo construída com Swagger, facilitando testes e integração com o frontend",
+        "Validações com TypeScript e middlewares personalizados para garantir segurança e robustez"
+      ],
+      "learning": "Durante o desenvolvimento deste projeto, estou aprofundando meus conhecimentos em arquitetura backend moderna com Node.js e TypeScript, além de explorar boas práticas com o Prisma ORM. Também estou focando em escrever código limpo, documentado e bem estruturado, com atenção especial à segurança e à experiência dos desenvolvedores que consumirão a API."
+    },
+    "status": "Em construção",
+    "year": "2025",
+    "video": "",
+    "link": "",
+    "github": "https://github.com/Guilherme1532/api-loja-virtual/",
+    "skills": ["Node.js", "TypeScript", "PostgreSQL", "Express.js", "Prisma"]
   }
 ]

@@ -8,7 +8,9 @@ import { Metadata } from "next";
 
 type PageProps = {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }> | undefined;
+  searchParams:
+    | Promise<{ [key: string]: string | string[] | undefined }>
+    | undefined;
 };
 
 export async function generateMetadata({
@@ -52,7 +54,7 @@ export default async function ProjectPage({ params }: PageProps) {
   return (
     <section className="mt-10 flex flex-col container md:max-w-[1000px] p-4 mx-auto items-center gap-10">
       <SwiperProjects project={project} />
-      <div className="w-full">
+      <div className="w-full flex flex-col gap-5">
         <div className="flex justify-between items-center gap-4 w-full">
           <div className="rounded-full p-2 flex items-center justify-center">
             <img
@@ -67,37 +69,59 @@ export default async function ProjectPage({ params }: PageProps) {
             {project.link !== "" && (
               <a
                 href={project.link}
-                className="rounded-full w-full flex border p-2 gap-1"
+                className="rounded-full w-full flex border p-2 gap-1 hover:scale-105 transition-transform duration-300"
               >
                 <FaGlobe size={25} />
-                <span className="text-nowrap">Visitar Site</span>
+                <span className="text-nowrap w-full text-center">
+                  Visitar Site
+                </span>
               </a>
             )}
             <a
               href={project.github}
-              className="rounded-full w-full flex border p-2 gap-1"
+              className="rounded-full w-full flex border p-2 gap-1 hover:scale-105 transition-transform duration-300"
             >
               <FaGithub size={25} />
-              <span className="text-nowrap">Repositório Github</span>
+              <span className="text-nowrap w-full text-center">
+                Repositório Github
+              </span>
             </a>
           </div>
         </div>
         <div className="flex flex-col justify-between gap-5 mt-4">
-          <div className="flex flex-wrap gap-2">
-            {projectSkills.map((skill, index) =>
-              skill ? (
-                <SkillCardProject
-                  key={index}
-                  name={skill.name}
-                  imgSrc={skill.imgSrc}
-                  color={skill.color}
-                />
-              ) : (
-                <div key={index}>Skill não encontrada</div>
-              )
-            )}
+          <div className="flex justify-between gap-4 w-full">
+            <div className="flex flex-wrap gap-2">
+              {projectSkills.map((skill, index) =>
+                skill ? (
+                  <SkillCardProject
+                    key={index}
+                    name={skill.name}
+                    imgSrc={skill.imgSrc}
+                    color={skill.color}
+                  />
+                ) : (
+                  <div key={index}>Skill não encontrada</div>
+                )
+              )}
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="flex items-center gap-2">
+                <span
+                  className={`px-3 py-1 rounded-full text-sm font-medium ${
+                    project.status === "Em construção"
+                      ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500/50"
+                      : project.status === "Concluído"
+                      ? "bg-green-500/20 text-green-300 border border-green-500/50"
+                      : "bg-gray-500/20 text-gray-300 border border-gray-500/50"
+                  }`}
+                >
+                  {project.status}
+                </span>
+              </p>
+              <p className="w-full text-center">Ano: {project.year}</p>
+            </div>
           </div>
-          <div className="w-full flex flex-col md:flex-row gap-4">
+          <div className="w-full flex flex-col md:flex-row gap-10">
             {project.video !== "" && (
               <div className="w-full">
                 <video

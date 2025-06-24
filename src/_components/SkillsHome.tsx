@@ -14,7 +14,7 @@ export default function SkillsHome() {
         </span>
       </div>
       <section className="flex flex-col">
-        <Skills />
+        <Skills skillNames={["HTML", "CSS", "JavaScript", "React", "TypeScript", "Node.js", "Tailwind CSS", "MongoDB", "Next.js"]}/>
       </section>
     </div>
   );

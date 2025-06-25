@@ -9,9 +9,6 @@ module.exports = {
         allow: '/',
       },
     ],
-    additionalSitemaps: [
-      'https://guilhermeaguiar.me/sitemap.xml',
-    ],
   },
   changefreq: 'weekly',
   priority: 0.7,

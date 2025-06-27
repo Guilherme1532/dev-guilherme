@@ -20,6 +20,9 @@ export default function Projects() {
         </span>
       </div>
       <ProjectsList />
+      <div className="w-full flex justify-center items-center mb-5">
+        <p>Ei, quer ver mais projetos que estou desenvolvendo agora, tenho mais em <a href="https://github.com/Guilherme1532" target="_blank" className="underline text-cyan-400">meu Github</a>!</p>
+      </div>
     </section>
   );
 }

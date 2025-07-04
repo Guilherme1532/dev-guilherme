@@ -9,7 +9,7 @@ import AnimatedSection from "@/_components/AnimatedSection";
 
 
 export const metadata = {
-  title: "Home | Guilherme Ataide",
+  title: "Guilherme Ataide - Desenvolvedor Fullstack",
   description: "Portfólio de projetos e experiências como desenvolvedor fullstack",
   keywords: ['desenvolvedor', 'frontend', 'fullstack', 'react', 'next.js'],
   openGraph: {
@@ -17,7 +17,9 @@ export const metadata = {
     description: "Conheça meus projetos e habilidades em desenvolvimento web frontend e backend",
     images: ['/home.jpg'],
   }
-}
+};
+
+
 export default function Home() {
   return (
     <section className="mt-10 flex flex-col container md:max-w-[1000px] p-4 mx-auto items-center gap-25">

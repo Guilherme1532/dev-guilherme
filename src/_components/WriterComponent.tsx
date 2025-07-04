@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function TypewriterText() {
   return (
-    <h1 className="h-16 text-xl md:text-2xl font-bold text-gray-300 animate-fade-up animate-duration-1000">
+    <h2 className="h-16 text-xl md:text-2xl font-bold text-gray-300 animate-fade-up animate-duration-1000">
       <Typewriter
         words={["Desenvolvedor Fullstack"]}
         loop={true}
@@ -14,6 +14,6 @@ export default function TypewriterText() {
         deleteSpeed={40}
         delaySpeed={1000}
       />
-    </h1>
+    </h2>
   );
 }

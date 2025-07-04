@@ -2,6 +2,18 @@
 User-agent: *
 Allow: /
 
+# *
+User-agent: *
+Allow: /_next/
+
+# *
+User-agent: *
+Allow: /project-files/
+
+# *
+User-agent: *
+Allow: /skills/
+
 # Host
 Host: https://guilhermeaguiar.me
 

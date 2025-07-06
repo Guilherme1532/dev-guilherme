@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
 type PageProps = {
-  params: Promise<{ id: string }>;
+  params: Promise<{ title: string }>;
   searchParams:
     | Promise<{ [key: string]: string | string[] | undefined }>
     | undefined;
@@ -16,9 +16,13 @@ type PageProps = {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const id = (await params).id;
+  const formattedName = (await params).title; // Nome formatado recebido na URL
 
-  const project = projects.find((p) => p.id === id);
+  // Desfazendo o formato para encontrar o projeto original
+  const originalName = formattedName.replace(/-/g, " "); // Substitui "-" por espaço
+
+  const project = projects.find((p) => p.name.toLowerCase() === originalName.toLowerCase());
+
 
   if (!project) {
     return {
@@ -38,12 +42,14 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return projects.map((p) => ({ id: p.id }));
+  return projects.map((p) => ({ title: p.name }));
 }
 
 export default async function ProjectPage({ params }: PageProps) {
-  const id = (await params).id;
-  const project = projects.find((p) => p.id === id);
+  const formattedName = (await params).title;
+  const originalName = formattedName.replace(/-/g, " ");
+  
+  const project = projects.find((p) => p.name.toLowerCase() === originalName.toLowerCase());
 
   if (!project) return notFound();
 

@@ -65,7 +65,7 @@
   },
   {
     "id": "3",
-    "name": "API para loja virtual",
+    "name": "API Loja Virtual",
     "logo": "../project-files/api-loja/project-logo.png",
     "images": ["../project-files/api-loja/screenshot-1.png"],
     "color": "bg-blue-500",

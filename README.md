@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Meu Site - Portfólio de Guilherme Ataide
 
-## Getting Started
+Este é um projeto desenvolvido com [Next.js](https://nextjs.org), criado para apresentar meu portfólio como desenvolvedor Fullstack.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React para aplicações web modernas.
+- **React**: Biblioteca para construção de interfaces.
+- **TypeScript**: Tipagem estática para JavaScript.
+- **Tailwind CSS**: Estilização moderna e responsiva.
+- **React Simple Typewriter**: Efeito de digitação animada.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Executar o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Ambiente de Desenvolvimento
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Instale as dependências:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Inicie o servidor de desenvolvimento:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizar o projeto.
 
-## Deploy on Vercel
+### Build para Produção
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Gere o build:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run build
+   ```
+
+2. Inicie o servidor de produção:
+   ```bash
+   npm run start
+   ```
+
+## Estrutura do Projeto
+
+- **`src/app`**: Contém as páginas e layouts principais.
+- **`src/_components`**: Componentes reutilizáveis.
+- **`public`**: Arquivos estáticos como imagens e o `robots.txt`.
+- **`next-sitemap.config.js`**: Configuração para geração de sitemaps.
+
+## Deploy
+
+Este projeto pode ser facilmente implantado na [Vercel](https://vercel.com), a plataforma oficial para Next.js.
+
+## Contato
+
+- **Autor**: Guilherme Ataide
+- **Email**: guilhermeataide1532@gmail.com
+- **Site**: [https://guilhermeaguiar.me](https://guilhermeaguiar.me)

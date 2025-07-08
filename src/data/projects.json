@@ -12,7 +12,7 @@
     "description": {
       "overview": "CourseStore é uma plataforma web moderna voltada para a venda e gestão de cursos online, desenvolvida com React no frontend e Node.js no backend, priorizando escalabilidade, segurança e experiência do usuário.",
       "features": [
-        "Cadastro e autenticação segura de usuários com JWT e cookies",
+        "Cadastro e autenticação de usuários com OAuth2.0 e JWT para segurança aprimorada",
         "Visualização dinâmica de cursos por categoria, com filtros interativos",
         "Carrinho de compras com integração completa ao Stripe para processamento de pagamentos",
         "Design responsivo e interativo com TailwindCSS e animações envolventes",

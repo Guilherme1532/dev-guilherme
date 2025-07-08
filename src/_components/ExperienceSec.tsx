@@ -77,7 +77,7 @@ export default function ExperienceSec() {
             <div className="w-full md:w-2/3">
               <p>
                 Retornando a minha jornada acadêmica, atualmente estou cursando
-                o curso de Tecnólogo em Análise e Desenvolvimento de Sistemas.
+                o curso Tecnólogo em Análise e Desenvolvimento de Sistemas.
                 Estou focado em aprimorar minhas habilidades em desenvolvimento
                 de software, com ênfase em tecnologias web e mobile.
               </p>
@@ -101,12 +101,12 @@ export default function ExperienceSec() {
             </div>
             <div className="w-full md:w-2/3">
               <p>
-                Entre 2018 e 2022, cursei Ciência da Computação na UNIP,
-                finalizando todas as disciplinas com dedicação especial ao
-                desenvolvimento de software. Nesse período, fortaleci meus
-                conhecimentos em lógica de programação, engenharia de sistemas e
-                bancos de dados, habilidades que sigo aprimorando em projetos
-                práticos e profissionais.
+                Durante minha trajetória em Ciência da Computação na UNIP
+                (2018-2022), finalizei todas as disciplinas do curso, com foco
+                especial em desenvolvimento de software. Mesmo sem a conclusão
+                formal com diploma, essa formação me proporcionou uma base em
+                lógica, engenharia de sistemas e bancos de dados, competências
+                que venho aprofundando com experiência prática.
               </p>
             </div>
           </div>
